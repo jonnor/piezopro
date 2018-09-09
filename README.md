@@ -8,7 +8,6 @@ Developing first prototype
 
 Order first proto
 
-* Simulate circuit. Frequency response
 * Finish layout
 
 Assemble/test first
@@ -27,6 +26,9 @@ Maybe the bottom should just be piezo+coppertape, sides+top is PCB? Can still lo
 * PCB stackup is a good way to shield.
 Test having just a few (4) connected holes in mid layer (from top/bottom). Can noise get in? 50Hz
 Emulate side-plated PCB using copper tape. How much does it improve?
+* Frequency response should include resonant peak.
+For 27mm element is as low as 4kHz, within fundamentals of piano. 12mm=9kHz. 9mm=18kHz, edge of human hearing.
+How pronouced is this peak actually when mounted on instrument?
 
 # Requirements
 
@@ -71,9 +73,11 @@ Mechanics
 
 ## Testing
 
+Tough-but-normal conditions
+
 * 3-8 devices
 * Plugged into standard mixer with 50m cable
-* 9V battery per thing
+* 9V battery per microphone
 
 Reverse polarity:
 Hold battery on wrong way for 10 seconds, plug right way, ensure works OK.
@@ -104,7 +108,12 @@ Shielding
 * [Shielding fabric](https://www.aliexpress.com/item/Emf-shielding-Fabric-Signal-Block-Fabric-Military-Nickel-Fabric/32795159060.html)
 * [Shielding paint](https://www.stewmac.com/Pickups_and_Electronics/Shielding/Conductive_Shielding_Paint.html)
 
-GSD. BSS138L
+Simulation
+
+* [ngspice: Using KiCAD as GUI](http://ngspice.sourceforge.net/ngspice-eeschema.html)
+* [eCircuitCenter: Basic SPICE opamp model](http://www.ecircuitcenter.com/Circuits/opmodel1/opmodel2.htm)
+* [WikiPedia: Piezoelectri sensor](https://en.wikipedia.org/wiki/Piezoelectric_sensor).
+Basic model (disregards resonance): Voltage source with a capacitor in series.
 
 # Construction
 Alternative production process
