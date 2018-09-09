@@ -6,10 +6,6 @@ Developing first prototype
 
 # TODO
 
-Order first proto
-
-* Finish layout
-
 Assemble/test first
 
 * Order components Farnell
@@ -29,6 +25,14 @@ Emulate side-plated PCB using copper tape. How much does it improve?
 * Frequency response should include resonant peak.
 For 27mm element is as low as 4kHz, within fundamentals of piano. 12mm=9kHz. 9mm=18kHz, edge of human hearing.
 How pronouced is this peak actually when mounted on instrument?
+
+# Worklog
+
+Proto 0.1
+
+* Sept 08. 4 hours. Research exiting designs, initial schematic.
+* Sept 09. 4 hours. Part selection and initial layout.
+* Sept 09. 4 hours. Setup simulation in KiCAD.
 
 # Requirements
 
