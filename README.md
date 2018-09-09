@@ -9,11 +9,12 @@ Developing first prototype
 Order first proto
 
 * Simulate circuit. Frequency response
-* Estimate BOM
-* Order signal generator
+* Finish layout
 
 Assemble/test first
 
+* Order components Farnell
+* Order Bitscope Farnell
 * Measure voltage range of piezo in typical application.
 When attached to PCB. With 10 Mohm load, oscilloscope
 
@@ -49,21 +50,24 @@ Mechanics
 * Power: 9V battery clip
 * 1m cable, soft/flexible
 
-8 cap. 1kr/stk. 8
-4 diodes. 0.5kr/stk 2
-2 opamps. 2.5kr/stk 5
-1 NMOS. 1 kr/stk 1
-resitors
-
-## Sourcing
+# Sourcing
 
 * Capacitors.
 [0.1uF](https://no.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/smd-ceramic-multilayer-mlcc-capacitors?capacitance=0.1uf&voltage-rating=25v|35v&range=inc-in-stock-grp1&sort=P_PRICE)
 [10uF](https://no.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/smd-ceramic-multilayer-mlcc-capacitors?capacitance=10uf&voltage-rating=6.3v|10v|25v|35v&range=inc-in-stock-grp1&sort=P_PRICE)
 * NMOS. [BSS138L](https://no.farnell.com/on-semiconductor/bss138lt1g/mosfet-n-50v-0-2a-sot-23/dp/1431319)
-* [Diodes](https://no.farnell.com/w/c/semiconductors-discretes/diodes/small-signal-diodes?no-of-pins=2pins|3pins&packaging=cuttape&range=inc-in-stock-grp1|exc-obs&sort=P_PRICE)
-* [Zeners](https://no.farnell.com/w/c/semiconductors-discretes/diodes/zener-single-diodes?zener-voltage-vz-typ=3.3v|3.6v|3.9v|4.3v|4.7v|5.1v&no-of-pins=2pins|3pins&packaging=cuttape&range=inc-in-stock)
+* Diodes [SOD-532](https://no.farnell.com/w/c/semiconductors-discretes/diodes/small-signal-diodes?diode-case-style=sod-523|sod-523f&no-of-pins=2pins|3pins&packaging=cuttape&range=inc-in-stock-grp1|exc-obs&sort=P_PRICE)
+*  Zeners [SOD-523](https://no.farnell.com/w/c/semiconductors-discretes/diodes/zener-single-diodes?zener-voltage-vz-typ=3.3v|3.6v|3.9v|4.3v|4.7v|5.1v&diode-case-style=sod-523|sod-523f&no-of-pins=2pins|3pins&packaging=cuttape&range=inc-in-stock&sort=P_PRICE)
 * Opamp. [TL062](https://no.farnell.com/search/prl/results?packaging=cuttape&range=inc-in-stock&st=tl062&sort=P_PRICE)
+* Piezo [Farnell](https://no.farnell.com/w/c/sensors-transducers/transducers/sensing-transducers/piezo-transducer-elements?external-diameter=27mm|35mm&range=inc-in-stock)
+
+# BOM
+
+* 8 cap. 1kr/stk. 8
+* 4 diodes. 0.5kr/stk 2
+* 2 opamps. 2.5kr/stk 5
+* 1 NMOS. 1 kr/stk 1
+* Resitors 2
 
 ## Testing
 
