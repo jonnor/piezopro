@@ -32,6 +32,7 @@ Emulate side-plated PCB using copper tape. How much does it improve?
 Electronics
 
 * PCB fits on top of piezo. 20mm diameter
+* BOM max 3 USD
 * 100 hours++ on 9V battery. Max 2mA avg draw
 * Low noise
 * Balanced output. But also works with unbalanced inputs
@@ -47,6 +48,22 @@ Mechanics
 * Output: 1/4" TRS female
 * Power: 9V battery clip
 * 1m cable, soft/flexible
+
+8 cap. 1kr/stk. 8
+4 diodes. 0.5kr/stk 2
+2 opamps. 2.5kr/stk 5
+1 NMOS. 1 kr/stk 1
+resitors
+
+## Sourcing
+
+* Capacitors.
+[0.1uF](https://no.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/smd-ceramic-multilayer-mlcc-capacitors?capacitance=0.1uf&voltage-rating=25v|35v&range=inc-in-stock-grp1&sort=P_PRICE)
+[10uF](https://no.farnell.com/w/c/passive-components/capacitors/ceramic-capacitors/smd-ceramic-multilayer-mlcc-capacitors?capacitance=10uf&voltage-rating=6.3v|10v|25v|35v&range=inc-in-stock-grp1&sort=P_PRICE)
+* NMOS. [BSS138L](https://no.farnell.com/on-semiconductor/bss138lt1g/mosfet-n-50v-0-2a-sot-23/dp/1431319)
+* [Diodes](https://no.farnell.com/w/c/semiconductors-discretes/diodes/small-signal-diodes?no-of-pins=2pins|3pins&packaging=cuttape&range=inc-in-stock-grp1|exc-obs&sort=P_PRICE)
+* [Zeners](https://no.farnell.com/w/c/semiconductors-discretes/diodes/zener-single-diodes?zener-voltage-vz-typ=3.3v|3.6v|3.9v|4.3v|4.7v|5.1v&no-of-pins=2pins|3pins&packaging=cuttape&range=inc-in-stock)
+* Opamp. [TL062](https://no.farnell.com/search/prl/results?packaging=cuttape&range=inc-in-stock&st=tl062&sort=P_PRICE)
 
 ## Testing
 
