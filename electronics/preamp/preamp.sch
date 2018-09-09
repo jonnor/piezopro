@@ -787,4 +787,8 @@ Text Label 2850 2000 0    50   ~ 0
 PRE-
 Text Label 2850 1400 0    50   ~ 0
 PRE+
+Text Label 7650 1600 0    50   ~ 0
+BUF+
+Text Label 8700 2000 0    50   ~ 0
+BUF-
 $EndSCHEMATC
