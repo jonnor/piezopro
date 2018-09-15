@@ -1,0 +1,14 @@
+#
+#Feature symbol names
+#
+$0 r5.906
+
+#
+#Feature attribute names
+#
+@0 .pattern_fill
+
+#
+#Layer features
+#
+A 0.97637795 0.48818898 0.97637795 0.48818898 0.48818898 0.48818898 0 P 10 N

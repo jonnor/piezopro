@@ -6,12 +6,21 @@ Developing first prototype
 
 # TODO
 
-Assemble/test first
+Revision 1 
 
-* Order components Farnell
+* Assemble PCB
+* Measure frequency response of amplifier
+* Test overvoltage protection
+* Test signal/noise ratio
+* Measure voltage range of piezo. With 10 Mohm load, oscilloscope.
+In typical application.
+* Test with balanced input
+* Test with unbalanced input
+* Document test procedure for PCB.
+
+Revision 2
+
 * Order Bitscope Farnell
-* Measure voltage range of piezo in typical application.
-When attached to PCB. With 10 Mohm load, oscilloscope
 
 Testing assumptions
 
@@ -33,6 +42,7 @@ Proto 0.1
 * Sept 08. 4 hours. Research exiting designs, initial schematic.
 * Sept 09. 4 hours. Part selection and initial layout.
 * Sept 09. 4 hours. Setup simulation in KiCAD.
+* Sept 14. 1 hour. Sketching piezo mounts with rim/center attach
 
 # Requirements
 
@@ -69,19 +79,22 @@ Mechanics
 
 # BOM
 
-* 8 cap. 1kr/stk. 8
-* 4 diodes. 0.5kr/stk 2
-* 2 opamps. 2.5kr/stk 5
-* 1 NMOS. 1 kr/stk 1
-* Resitors 2
+[Octopart BOM](https://octopart.com/bom-tool/TbIQ2Cbo/OKDwL97yteywY4BA)
+
 
 ## Testing
 
+Testing aspects
+
+* PCB design verification
+* Enclosure/mount design verification
+* Production checks.
+
 Tough-but-normal conditions
 
-* 3-8 devices
+* 3-8 microphones
 * Plugged into standard mixer with 50m cable
-* 9V battery per microphone
+* 1 9V battery per microphone
 
 Reverse polarity:
 Hold battery on wrong way for 10 seconds, plug right way, ensure works OK.
@@ -90,7 +103,7 @@ Overvoltage:
 Hit piezo with hammer. Ensure performance good afterwards.
 
 Frequency response:
-Connect signal generator at input, with capacitor simulating piezo capacitance.
+Connect signal generator at PCB input, with capacitor simulating piezo capacitance.
 Sweep sinewave, record output, calculate frequency response.
 
 Noise.
@@ -119,13 +132,4 @@ Simulation
 * [WikiPedia: Piezoelectri sensor](https://en.wikipedia.org/wiki/Piezoelectric_sensor).
 Basic model (disregards resonance): Voltage source with a capacitor in series.
 
-# Construction
-Alternative production process
 
-* Cup is 3d-printed, CNC milled or injection molded
-* If plastic, coated with conductive paint.
-* Piezo soldered to PCB
-* Wires soldered to PCB
-* PCB glued to top, piezo glued to bottom.
-* Isolating,conductive tape covering piezo
-* Whole thing is potted in PU/epoxy
