@@ -6,23 +6,27 @@ Developing first prototype
 
 # TODO
 
-Revision 1 
+Preamp design verification, revision 1 
 
-* Assemble PCB
-* Measure frequency response of amplifier
 * Test overvoltage protection
-* Test signal/noise ratio
-* Measure voltage range of piezo. With 10 Mohm load, oscilloscope.
-In typical application.
-* Test with balanced input
-* Test with unbalanced input
+* Order Bitscope Farnell
+* Calculate frequency response on test data
+* Measure frequency response of amplifier with Bitscope
+* ? Maybe adjust low freq cutoff to reduce handling noise? 30Hz
+* Measure signal/noise ratio
+* Test remaining 4 pieces (Koka)
+
+Piezo
+
+Preamp Revision 2
+
+* All connectors for output on one side
+* ? maybe connection for direct soldering onto piezo
+* Smaller board size. Smaller components, tighter layout
+* Optimize costs of components
 * Document test procedure for PCB.
 
-Revision 2
-
-* Order Bitscope Farnell
-
-Testing assumptions
+## Questions
 
 * PCB stackup retains piezo sensitivity.
 Put piezo onto PCB. With glue? Use adhesive tape to attach to instrument.
@@ -35,6 +39,21 @@ Emulate side-plated PCB using copper tape. How much does it improve?
 For 27mm element is as low as 4kHz, within fundamentals of piano. 12mm=9kHz. 9mm=18kHz, edge of human hearing.
 How pronouced is this peak actually when mounted on instrument?
 
+# Design test
+
+Revision 1. gain. 220k/22k. 10M input.
+20mm Murata. Piezo in tin, glued. Lying on top of guitar. 
+Measured GND, HOT. on output.
+low E string. 80mVpp sustained, 500mVpp attack
+G string. 70mVpp sustained, 700mVpp attack
+high E string. 70mVpp sustain, 800mVpp attack
+
+## Learnings
+
+* Basic circuit works. Both with balanced and unbalanced inputs.
+* Using a tin box works well as a shield.
+* With microphone level input, signal is too hot.
+
 # Worklog
 
 Proto 0.1
@@ -43,6 +62,7 @@ Proto 0.1
 * Sept 09. 4 hours. Part selection and initial layout.
 * Sept 09. 4 hours. Setup simulation in KiCAD.
 * Sept 14. 1 hour. Sketching piezo mounts with rim/center attach
+* Sept 19. 7 hours. Assembly and testing revision 1 PCB.
 
 # Requirements
 
@@ -132,4 +152,13 @@ Simulation
 * [WikiPedia: Piezoelectri sensor](https://en.wikipedia.org/wiki/Piezoelectric_sensor).
 Basic model (disregards resonance): Voltage source with a capacitor in series.
 
+# Usage ideas
+
+* Guitar. Acoustic, electric, traveller.
+* DIY Cigarbox
+* CNC mill an electric travel guitar from single piece of wood. Rosewood/maple.
+https://www.aliexpress.com/item/Hot-Sale-Custom-Electric-Travel-Guitar-Portable-Style-Rosewood-Fretboard-22-Frets-with-Soft-Bag-can/32803999609.html
+* Violin,viola,chello. 
+* Double bass. 
+* Stomp box
 
