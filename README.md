@@ -19,9 +19,10 @@ Piezo selection
 Preamp Revision 2
 
 * All connectors for output on one side
-* ? maybe connection for direct soldering onto piezo
-* Smaller board size. Smaller components, tighter layout
-* Optimize costs of components
+* ? connection for direct soldering onto piezo
+* Adjust frequency response and gain.
+* Smaller board size. Smaller components, tighter layout. TL074 in TSSOP, 0402.
+* Optimize costs of components. Try DC couple opamp stages? Reduce capacitor values where possible
 * Document test procedure for PCB.
 
 ## Questions
@@ -63,6 +64,7 @@ Proto 0.1
 * Sept 09. 4 hours. Setup simulation in KiCAD.
 * Sept 14. 1 hour. Sketching piezo mounts with rim/center attach
 * Sept 19. 7 hours. Assembly and testing revision 1 PCB.
+* Sept 22. 2 hours. Test overvoltage, calculate new component values
 
 # Requirements
 

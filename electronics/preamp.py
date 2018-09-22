@@ -17,6 +17,7 @@ def main():
     inp = cutoff(10e6, piezo)
     low = cutoff(ri, 10e-6)
     high = cutoff(rf, 2.2e-9)
+    out = cutoff(10e3, 10e-6)
 
     print(locals())
 
