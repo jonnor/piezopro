@@ -9,8 +9,7 @@ Developing first prototype
 Preamp design verification, revision 1 
 
 * Measure frequency response of amplifier with Bitscope
-* ? Maybe adjust low freq cutoff to reduce handling noise? 30Hz
-* Measure signal/noise ratio
+* Measure signal/noise ratio or noise floor.
 
 Piezo selection
 
