@@ -8,15 +8,14 @@ Developing first prototype
 
 Preamp design verification, revision 1 
 
-* Test overvoltage protection
-* Order Bitscope Farnell
-* Calculate frequency response on test data
 * Measure frequency response of amplifier with Bitscope
 * ? Maybe adjust low freq cutoff to reduce handling noise? 30Hz
 * Measure signal/noise ratio
-* Test remaining 4 pieces (Koka)
 
-Piezo
+Piezo selection
+
+* Compare piezo sizes. 9mm,12mm,15mm,20mm
+* Compare different mounting options
 
 Preamp Revision 2
 
@@ -47,6 +46,8 @@ Measured GND, HOT. on output.
 low E string. 80mVpp sustained, 500mVpp attack
 G string. 70mVpp sustained, 700mVpp attack
 high E string. 70mVpp sustain, 800mVpp attack
+
+Current consumption 0.68 mA.
 
 ## Learnings
 
