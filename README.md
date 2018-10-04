@@ -20,11 +20,12 @@ Piezo selection
 
 Preamp Revision 2
 
-* Change to 0402 components
-* Try fit components into 20mm circle
 * Verify connector footprint,location
-* Add ground plane on back. VGND?
-* Make pads for piezo connection SMD. Location for pogopins?
+* SMD pads for
+* Verify Location for pogopins?
+
+Final revision
+
 * Document test procedure for PCB.
 
 ## Questions
