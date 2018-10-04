@@ -8,6 +8,8 @@ Developing first prototype
 
 Preamp design verification, revision 1 
 
+* Test with 5V power supply
+* Test overvoltage on connector. VGND,HOT,COLD
 * Measure frequency response of amplifier with Bitscope
 * Measure signal/noise ratio or noise floor.
 
@@ -18,11 +20,11 @@ Piezo selection
 
 Preamp Revision 2
 
-* All connectors for output on one side
-* ? connection for direct soldering onto piezo
-* Adjust frequency response and gain.
-* Smaller board size. Smaller components, tighter layout. TL074 in TSSOP, 0402.
-* Optimize costs of components. Try DC couple opamp stages? Reduce capacitor values where possible
+* Change to 0402 components
+* Try fit components into 20mm circle
+* Verify connector footprint,location
+* Add ground plane on back. VGND?
+* Make pads for piezo connection SMD. Location for pogopins?
 * Document test procedure for PCB.
 
 ## Questions
