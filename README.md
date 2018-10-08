@@ -11,17 +11,10 @@ Piezo selection
 * Compare piezo sizes. 9mm,12mm,15mm,20mm
 * Compare different mounting options
 
-Preamp Revision 2 send
-
-* Test running without capacitor
-* Verify connector footprint,location
-* Verify location for pogopins
+Preamp Revision 2 verify
 
 * Measure frequency response of amplifier with Bitscope
 * Measure signal/noise ratio or noise floor.
-
-Preamp Revision 2 verify
-
 * Test with 5V power supply
 * Test overvoltage on connector. VGND,HOT,COLD
 
