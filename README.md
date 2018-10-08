@@ -11,6 +11,12 @@ Piezo selection
 * Compare piezo sizes. 9mm,12mm,15mm,20mm
 * Compare different mounting options
 
+Preamp Revision 2 order
+
+* Fix fill top plane
+* Add edge plating connector
+* Import artwork back
+
 Preamp Revision 2 verify
 
 * Measure frequency response of amplifier with Bitscope
@@ -54,7 +60,7 @@ Current consumption 0.68 mA.
 
 # Worklog
 
-Proto 0.1
+Rev1: Circuit design verification. 22 hours
 
 * Sept 08. 4 hours. Research exiting designs, initial schematic.
 * Sept 09. 4 hours. Part selection and initial layout.
@@ -62,6 +68,12 @@ Proto 0.1
 * Sept 14. 1 hour. Sketching piezo mounts with rim/center attach
 * Sept 19. 7 hours. Assembly and testing revision 1 PCB.
 * Sept 22. 2 hours. Test overvoltage, calculate new component values
+
+Rev2: Assembly concept verification. 7 hours 
+
+* Oct 4. 4 hours. Update schematic and layout for revision 2. 
+* Oct 8. 3 hours. Go through revision 2.
+
 
 # Requirements
 
