@@ -13,9 +13,7 @@ Piezo selection
 
 Preamp Revision 2 order
 
-* Fix fill top plane
-* Add edge plating connector
-* Import artwork back
+* Import high-resolution artwork
 
 Preamp Revision 2 verify
 
