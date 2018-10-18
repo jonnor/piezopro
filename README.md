@@ -62,7 +62,7 @@ Rev1: Circuit design verification. 22 hours
 
 * Sept 08. 4 hours. Research exiting designs, initial schematic.
 * Sept 09. 4 hours. Part selection and initial layout.
-* Sept 09. 4 hours. Setup simulation in KiCAD.
+* Sept 09. 1 / 4 hours. Setup simulation in KiCAD.
 * Sept 14. 1 hour. Sketching piezo mounts with rim/center attach
 * Sept 19. 7 hours. Assembly and testing revision 1 PCB.
 * Sept 22. 2 hours. Test overvoltage, calculate new component values
@@ -71,6 +71,7 @@ Rev2: Assembly concept verification. 7 hours
 
 * Oct 4. 4 hours. Update schematic and layout for revision 2. 
 * Oct 8. 3 hours. Go through revision 2.
+* Oct 3. 1 / 4 hours. Find out how to import artwork in KiCAD
 
 
 # Requirements
