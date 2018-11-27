@@ -396,7 +396,7 @@
       (net 10 -BATT))
     (pad 1 smd rect (at -2 2.025 180) (size 0.6 1.5) (layers B.Cu B.Paste B.Mask)
       (net 1 +BATT))
-    (model ${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_Pico-Clasp_202396-0507_1x05-1MP_P1.00mm_Horizontal.wrl
+    (model "/home/jon/projects/piezopro/electronics/MOLEX Pico-Clasp 5-xy.step"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
