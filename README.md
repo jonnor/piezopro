@@ -6,15 +6,6 @@ Developing first prototype
 
 # TODO
 
-Piezo selection
-
-* Compare piezo sizes. 9mm,12mm,15mm,20mm
-* Compare different mounting options
-
-Preamp Revision 2 order
-
-* Import high-resolution artwork
-
 Preamp Revision 2 verify
 
 * Measure frequency response of amplifier with Bitscope
@@ -24,7 +15,7 @@ Preamp Revision 2 verify
 
 Final revision
 
-* Document test procedure for PCB.
+* Document test procedure for PCB and/or assembly.
 
 ## Questions
 
