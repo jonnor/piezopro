@@ -69,13 +69,13 @@ Rev2: Assembly concept verification. 7 hours
 
 Electronics
 
-* PCB fits on top of piezo. 20mm diameter
+* PCB is an enclosure for 20mm piezo. 25mm outer diameter
 * BOM max 3 USD
 * 100 hours++ on 9V battery. Max 2mA avg draw
 * Low noise
 * Balanced output. But also works with unbalanced inputs
 * Line-level output, +4dBU
-* 10Hz-100kHz bandwidth
+* 20Hz-20kHz bandwidth
 * Reverse polarity protection
 * Input overvoltage protection
 
