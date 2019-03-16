@@ -64,6 +64,9 @@ Rev2: Assembly concept verification. 7 hours
 * Oct 8. 3 hours. Go through revision 2.
 * Oct 3. 1 / 4 hours. Find out how to import artwork in KiCAD
 
+Rev3: Production tweaked
+
+* March 16. 2 hours. Make Python tool for vias shielding, use instead of edge platings
 
 # Requirements
 
