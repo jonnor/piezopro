@@ -18,7 +18,7 @@ def circle_equidistant(radius, holes, angular_offset=0):
         yield x, y
 
 
-def viashield(shield_radius, name='viashield', hole_size=0.3, pad_size=0.6, pad_margin = 0.2):
+def viashield(shield_radius, name='viashield', hole_size=0.3, pad_size=0.6, pad_margin = 0.05):
 
     footprint_name = name
 
@@ -38,33 +38,31 @@ def viashield(shield_radius, name='viashield', hole_size=0.3, pad_size=0.6, pad_
     #kicad_mod.append(RectLine(start=[-2.25, -2.25], end=[5.25, 2.25], layer='F.CrtYd'))
 
     def Via(x, y, number):
+        layers = ['*.Cu', 'B.Mask']
         return Pad(number=number, type=Pad.TYPE_THT, shape=Pad.SHAPE_CIRCLE,
                     at=[x, y], size=[pad_size, pad_size],
-                    drill=hole_size, layers=Pad.LAYERS_THT)
+                    drill=hole_size, layers=layers)
 
     # create pads
     pin_number = 1 # everything should be connected together
-    spacing = (pad_size*2) + pad_margin
+    spacing = pad_size + pad_margin
     ring_distance = spacing/3
     circumference = math.pi*2*shield_radius
     holes = int(math.floor(circumference / spacing))
 
-    for x, y in circle_equidistant(shield_radius+ring_distance, holes):
+    for x, y in circle_equidistant(shield_radius, holes):
         kicad_mod.append(Via(x, y, number=1))
 
-    offset = math.sin(spacing / shield_radius)/2
-    for x, y in circle_equidistant(shield_radius-ring_distance, holes, offset):
-        kicad_mod.append(Via(x, y, number=pin_number))
 
     return kicad_mod
 
 def main():
 
-    mod = viashield(11.3)
+    mod = viashield(12)
 
     # output kicad model
     file_handler = KicadModTree.KicadFileHandler(mod)
-    file_handler.writeFile('electronics/viashield3.kicad_mod')
+    file_handler.writeFile('electronics/viashield.kicad_mod')
 
 if __name__ == '__main__':
     main()

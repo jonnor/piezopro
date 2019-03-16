@@ -737,4 +737,21 @@ F 3 "" H 5950 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5950 5200 5700 5200
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5C8D4C3E
+P 9800 4150
+F 0 "J4" H 9880 4192 50  0000 L CNN
+F 1 "Conn_01x01" H 9880 4101 50  0000 L CNN
+F 2 "piezopro:viashield" H 9800 4150 50  0001 C CNN
+F 3 "~" H 9800 4150 50  0001 C CNN
+	1    9800 4150
+	1    0    0    -1  
+$EndComp
+Text Notes 9550 3900 0    118  ~ 0
+Shield
+Text GLabel 9400 4150 0    50   Input ~ 0
+VGND
+Wire Wire Line
+	9400 4150 9600 4150
 $EndSCHEMATC
