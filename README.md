@@ -143,6 +143,9 @@ Electronics
 * [Elliot Sound Products: Balanced Line Driver](http://sound.whsites.net/articles/dwopa3.htm#s10)
 * [Elliot Sound Products: High-Z ](http://sound.whsites.net/articles/high-z.html)
 * [WikiPedia: Line level](https://en.wikipedia.org/wiki/Line_level). Consumer: -10dBV 0.894 Vpp, Pro: +4dBu 3.472
+* [StackExchange.com: Piezo FET preamp balanced output](https://sound.stackexchange.com/questions/687/diy-contact-microphone/37714#37714).
+Developed by Alex Rice, www.zachpoff.com/diy-resources/alex-rice-piezo-preamplifier/.
+Extremely simple design. Used as base for DIY kits and complete microphone Cortado MkII from Zeppelin Labs. 
 
 Shielding
 
@@ -153,8 +156,20 @@ Simulation
 
 * [ngspice: Using KiCAD as GUI](http://ngspice.sourceforge.net/ngspice-eeschema.html)
 * [eCircuitCenter: Basic SPICE opamp model](http://www.ecircuitcenter.com/Circuits/opmodel1/opmodel2.htm)
-* [WikiPedia: Piezoelectri sensor](https://en.wikipedia.org/wiki/Piezoelectric_sensor).
+* [WikiPedia: Piezoelectric sensor](https://en.wikipedia.org/wiki/Piezoelectric_sensor).
 Basic model (disregards resonance): Voltage source with a capacitor in series.
+
+## Existing products
+
+Active contact microphones
+
+- Schertler. [Thommann](https://www.thomann.de/gb/schertler_dyn_uni_p48_contact_microphone.htm).
+48V phantom power.
+310 EUR.
+- Cortado MkII [from Zeppelin Labs](https://zeppelindesignlabs.com/product/cortado-mkiii-contact-microphone/).
+48V phantom power. Two gain settings, low-frequency cutoff switch.
+150 USD assembled.
+
 
 # Usage ideas
 
