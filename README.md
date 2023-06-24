@@ -6,12 +6,18 @@ Developing first prototype
 
 # TODO
 
-Preamp Revision 2 verify
+Preamp Revision 2 testing
 
 * Measure frequency response of amplifier with Bitscope
 * Measure signal/noise ratio or noise floor.
 * Test with 5V power supply
 * Test overvoltage on connector. VGND,HOT,COLD
+
+Preamp Revision 3
+
+* Depending on test results
+* Test a charge amplifier?
+* Test a JFET directly on piezo?
 
 Final revision
 
@@ -146,6 +152,11 @@ Electronics
 * [StackExchange.com: Piezo FET preamp balanced output](https://sound.stackexchange.com/questions/687/diy-contact-microphone/37714#37714).
 Developed by Alex Rice, www.zachpoff.com/diy-resources/alex-rice-piezo-preamplifier/.
 Extremely simple design. Used as base for DIY kits and complete microphone Cortado MkII from Zeppelin Labs. 
+* [Elliot Sound Products: Piezo Pickup Preamplifiers](https://sound-au.com/project202.htm).
+Tested high-Z preamp versus Charge Amplifier.
+First opamp stage is charge amp with 1x gain, then second stage sets desired gain.
+Found that high-Z would pick up (50hz) hum, where as charge amplifier did not. When piezo was connected with bare leads.
+Tested with TL072 and found it very quiet.
 
 Shielding
 
@@ -169,6 +180,8 @@ Active contact microphones
 - Cortado MkII [from Zeppelin Labs](https://zeppelindesignlabs.com/product/cortado-mkiii-contact-microphone/).
 48V phantom power. Two gain settings, low-frequency cutoff switch.
 150 USD assembled.
+- K&K Pure pickup plus K&K Pure preamp. [Thommann](https://www.thomannmusic.no/kk_pure_preamp.htm?sid=fd268c89787f256dcc79b210d18a3667).
+Total around 300 EUR
 
 
 # Usage ideas
