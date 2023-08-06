@@ -12,10 +12,21 @@ and be shielded completely using copper tape.
 And potentially coated with plastidip et.c. to be fully waterproof.
 Output is a NN cm long cable with 3.5 mm TRRS male.
 
+## TODO
+
+- Adapt circuit to have trimpot for Rs
+- Select and order components. Particularly JFETs
+- Make and test initial circuit
+- Measure gain, noise levels
+
 ## Open questions
 
-- Does direct soldering
-- Is the two-step interface of JFET buffer, then external preamp give good quality?
+- Does this two-step amplified design work give good quality? First JFET buffer, then external preamp?
+Test the circuit externally.
+Test how copper shielding affects.
+Over just the piezo. Over piezo, and PCB separate. Over piezo and PCB integrated.
+
+- How is sound pickup influenced by mounting PCB onto the piezo?
 
 Alternative fully-integrated design.
 Put everything needed also for P48V phantom power and 9V.
@@ -37,6 +48,14 @@ and require different gain
 - Stringed/plucked instruments. Guitar, kaliba, piano etc. Relatively loud
 - Percussive instruments. Very loud / high energy
 
+## Learnings
+
+### Direct soldering
+
+06.08.2023. Tested soldering a PCB board with castellated holes directly to a PCB.
+Worked quite nicely. Heated the PCB castellated first, then feed solder on pad, then towards piezo.
+Used 280 deg C soldering iron, was sufficient.
+
 
 ## Components
 
@@ -46,8 +65,8 @@ SOT23 DSG: Gate on tip
 
 - 2SK3557 - SOT23 DSG
 - MMBF4416A - SOT23 DSG
-- MMBF5484/MMBF5485/MMBF5486 - SOT23 DSG
-- MMBFJ309/MMBFJ310 - SOT23 DSG
+- MMBF5484/MMBF5485/MMBF5486 - SOT23 DSG. 5484 has lowest VGS_off - good
+- MMBFJ309/MMBFJ310 - SOT23 DSG. 309 has lowest VGS_off - good
 - MMBF4393LT1G - SOT23 DSG
 
 Very expensive
@@ -62,6 +81,41 @@ Discontinued
 - BF256B
 - BF862
 - BF556
+
+## References
+
+### Elliot Sound: JFET amplifier design
+https://sound-au.com/articles/jfet-design.htm#s3
+
+Most important JFET parameters:
+
+- the gate-source cutoff voltage VGS (off). Aka  'pinch-off' voltage (VP).
+- and the maximum current with zero gate voltage (IDSS).
+
+Must in practice be measured.
+Large amount of unit variation in these. 
+Shows a practical test circuits to measure the key parameters.
+
+Lots of discussion on how to set bias point (via selecting R_s).
+Recommends a trim-pot for R_s.
+
+The lower the supply voltage, the more accurate the biasing needs to be.
+
+## Bias point and component selection
+
+In this applicaion there will also be some external variation in R_s on,
+so the circuit must be robust to a reasonable range of these.
+Complicates testing of the bias point. 
+
+In practice JFET selection is likely to be critical.
+And it is quite likely that JFETs must be measured/binned.
+
+=> this design is only ideal when direct operation as "elecret" mic is needed.
+If an external power source is acceptable, then a op-amp based charge amplifier is better.
+
+Gain adjustment has to be primarily done by selecting another JFET.
+The other option is to use the resistive divider on the input,
+but this reduces SNR. 
 
 ## Accessories
 

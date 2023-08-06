@@ -211,3 +211,27 @@ Mic level considerably different.
 Can typical XLR mic preamps handle instrument or line level?
 
 Behringer Xenix. Max level +10 dBu, yes
+
+## Piezo levels
+
+What are the levels the piezo produces under the range of usecases?
+
+NOTE: may depend the buffer being used.
+Baseline: JFET unity-gain opamp
+
+Instrument usage
+
+- Guitar. Electric vs acoustic. Soft vs hard playing. High vs low strings.
+- Kalimba. Soft vs hard playing
+- Drums. Electronic pad
+- Piano.
+
+Sound installation
+
+- Bridge with someone walking on it
+ Or just the
+
+Overload conditions
+
+- 
+
