@@ -233,5 +233,7 @@ Sound installation
 
 Overload conditions
 
-- 
+- Drop piezo on floor
+- Hit with finger
+- Hit with hammer
 

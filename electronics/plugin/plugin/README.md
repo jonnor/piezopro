@@ -3,7 +3,8 @@
 
 Contains a single JFET buffer, designed to be powered from "Plug in power" (PIP) at 3-5 volts.
 Very similar to off-the-shelf electret microphone modules are done.
-Can be directly plugged into a portable recorder, PC, phone or laptop accepting mic-level input and supporting PIP.
+Can be directly plugged into a device with mic-level input supporting PIP.
+Such as a portable recorder, PC, phone or laptop.
 Or use preamps or adapters designed for electret microphones.
 
 Board designed to be soldered directly to piezo element, using castellated edge holes.
@@ -15,7 +16,7 @@ Output is a NN cm long cable with 3.5 mm TRRS male.
 ## TODO
 
 - Adapt circuit to have trimpot for Rs
-- Select and order components. Particularly JFETs
+- Select and order components. Follow Zack Hoff PIP amp. JFET: 2SK209
 - Make and test initial circuit
 - Measure gain, noise levels
 
@@ -68,6 +69,10 @@ SOT23 DSG: Gate on tip
 - MMBF5484/MMBF5485/MMBF5486 - SOT23 DSG. 5484 has lowest VGS_off - good
 - MMBFJ309/MMBFJ310 - SOT23 DSG. 309 has lowest VGS_off - good
 - MMBF4393LT1G - SOT23 DSG
+- MMBFJ201 - SOT23 DSG.
+- SST201 - SOT23. Low cutoff voltage
+- LSBF510 - SOT23. Low cutoff voltage
+- 2N4117
 
 Very expensive
 
@@ -82,7 +87,62 @@ Discontinued
 - BF862
 - BF556
 
+Specialiy
+
+- JFE150 SOT23-5. Modern. Includes clamping diodes
+
+Electret Capsule Microphone (ECM) specialized
+
+- 2SK208. SOT23. Pin order different? No proction diodes. Normally in stock Digikey.
+- 2SK1109. SOT23. Comes with binning of IDDS. Obsolete? 
+- TF256TH. One diode internally. Comes with binning of IDDS. SC-106A SMD. Obsolete?
+- NTE2917. TO92S
+
+Others by others with success
+
+- 2SK209. By Zack Hoff
+
+
 ## References
+
+### Zack Poff: PIP Stereo Piezo Preamplifier
+
+https://www.zachpoff.com/resources/pip-stereo-piezo-preamplifier/
+
+Very simple circuit.
+JFET, Zeners for protection.
+Mentions possibility of adding a capacitor on Rs to increase gain.
+Used the 2SK209 SMD JFET (IDSS grade Y). After testing many others.
+Zeners are back-to-back. 5.1V
+Stereo. Two channels on single PCB.
+Have to solder inputs and outputs to wires. No connectors.
+3d-printed enclosure.
+Has a "pad" switch. Pulls some capacitors to ground.
+Says there is sufficient gain for quiet sources. But not the best for percussive. Presumably overloading output.
+
+!! He has tested the spread of the JFETs.
+They should be measured and binned by IDSS, for best results.
+
+Excellent starting point for an inline PIP preamp.
+Would instead use 3.5 mm female jacks. SMT, avoid soldering cable.
+Also tweaking the enclosure and PCB to make shielding trivial. 
+Copper foil/tape that connects to PCB. Solder one spot and then press-connect.
+And order it pre-made at JLCPCB etc.
+
+His preamp was used in combination with below DYI piezos.
+
+### 3D-Printed DIY Contact Microphone
+
+https://www.zachpoff.com/resources/3d-printed-diy-contact-microphone/
+27mm piezo disk.
+Glued to 1-1/8″ dia Aluminum discs. Approx 29 mm.
+3D-printed back shells.
+The alu disc makes them quite sturdy. Also also reduces the reasonant peak. At the expense of some sensitivity.
+?? No shielding in the enclosure. Not mentioned the effect of this.
+Tested by students over many years.
+
+Seems like a very practical construction.
+
 
 ### Elliot Sound: JFET amplifier design
 https://sound-au.com/articles/jfet-design.htm#s3
